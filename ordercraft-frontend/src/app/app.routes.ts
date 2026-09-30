@@ -16,12 +16,22 @@ export const routes: Routes = [
     loadComponent: () => import('./features/dashboard/dashboard-placeholder.component').then(m => m.DashboardPlaceholderComponent)
   },
   {
+    path: 'users',
+    canActivate: [authGuard],
+    loadChildren: () => import('./features/users/users.routes').then(m => m.USERS_ROUTES)
+  },
+  {
+    path: 'roles',
+    canActivate: [authGuard],
+    loadChildren: () => import('./features/roles/roles.routes').then(m => m.ROLES_ROUTES)
+  },
+  {
     path: '',
-    redirectTo: 'auth/login',
+    redirectTo: "auth/login",
     pathMatch: 'full'
   },
   {
     path: '**',
-    redirectTo: 'auth/login'
+    redirectTo: "auth/login"
   }
 ];
