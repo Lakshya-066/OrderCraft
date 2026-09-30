@@ -87,7 +87,8 @@
               "buildTarget": "ordercraft-frontend:build:production"
             },
             "development": {
-              "buildTarget": "ordercraft-frontend:build:development"
+              "buildTarget": "ordercraft-frontend:build:development",
+              "proxyConfig": "proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

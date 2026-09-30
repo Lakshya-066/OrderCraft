@@ -66,7 +66,7 @@ WHERE r.role_name = 'General User'
 -- -----------------------------------------------
 INSERT INTO oc_users (id, username, email, full_name, password_hash, is_active)
 VALUES (oc_users_seq.NEXTVAL, 'admin', 'admin@ordercraft.com', 'System Administrator',
-        '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 1);
+        '$2a$10$lDN01B9QvcHLB789Pw.hgOryOx2g3RD9hKhb6z4Sdoe3jOKUHSHZ2', 1);
 
 -- -----------------------------------------------
 -- 6. Assign Admin role to admin user

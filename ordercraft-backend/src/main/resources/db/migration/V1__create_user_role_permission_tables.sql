@@ -63,5 +63,3 @@ CREATE TABLE oc_user_roles (
 
 -- Indexes
 CREATE INDEX idx_oc_users_active ON oc_users(is_active);
-CREATE INDEX idx_oc_users_username ON oc_users(username);
-CREATE INDEX idx_oc_users_email ON oc_users(email);
