@@ -19,6 +19,10 @@ import { AuthService } from '../../core/services/auth.service';
         <ul style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 1rem;">
           <li *ngFor="let perm of permissions">{{ perm }}</li>
         </ul>
+        <div style="margin-bottom: 1rem;">
+          <a routerLink="/users" style="margin-right: 1rem; color: #007bff; text-decoration: none; font-weight: bold;">Manage Users</a>
+          <a routerLink="/roles" style="margin-right: 1rem; color: #007bff; text-decoration: none; font-weight: bold;">Manage Roles</a>
+        </div>
         <button (click)="logout()" style="padding: 0.5rem 1rem; background: #dc3545; color: white; border: none; border-radius: 4px; cursor: pointer;">
           Logout
         </button>
